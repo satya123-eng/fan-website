@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function on(){
+    document.getElementById("cross").className='on';
+}
+function off(){
+    document.getElementById("cross").className='off';
+}
+</script>
+<style>
+#cross {
+font-size:5em;
+display: flex;
+justify-content: center;
+color: brown;
+
+}
+.on{
+animation: ani 0.1s linear infinite;
+
+}
+button{
+    font-size: ;
+    margin-left: 10px;
+    margin: 20px;
+}
+@keyframes ani{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+</style>
+
+</head>
+<body>
+<h1 align="center">FAN SWITCH ON/OFF</h1>
+<p id="cross">✖️</p>
+<button onclick="on()">TURN ON </button>
+<button onclick="off()">TURN OFF </button>
+</body>
+
+
+
+</html>
